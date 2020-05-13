@@ -21,7 +21,7 @@ class METER(object):
     def normalized_picture(self):
         img = cv2.imread(self.path)
         y, x = img.shape[:2]
-        y_s = 1200
+        y_s = 300
         x_s = x * y_s / y
         x_x = int(x_s)
         crop_size = (x_x, y_s)
@@ -145,16 +145,16 @@ class METER(object):
         x1 = c_x + c_x * 0.8
         src = img.copy()
         freq_list = []
-        for i in range(3601):
-            x = (x1 - c_x) * cos(i * pi / 1800) + c_x
-            y = (x1 - c_x) * sin(i * pi / 1800) + c_y
+        for i in range(361):
+            x = (x1 - c_x) * cos(i * pi / 180) + c_x
+            y = (x1 - c_x) * sin(i * pi / 180) + c_y
             temp = src.copy()
             cv2.line(temp, (c_x, c_y), (int(x), int(y)), (0, 0, 255), thickness=3)
             t1 = img.copy()
             t1[temp[:, :, 2] == 255] = 255
             c = img[temp[:, :, 2] == 255]
             points = c[c == 0]
-            i = i / 10
+            i = i / 1
             freq_list.append((len(points), i))
             #cv2.imshow('d0', temp)
             cv2.imshow('zhixian', t1)
