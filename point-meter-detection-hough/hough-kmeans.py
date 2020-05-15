@@ -21,7 +21,7 @@ class METER(object):
     def normalized_picture(self):
         img = cv2.imread(self.path)
         y, x = img.shape[:2]
-        y_s = 300
+        y_s = 600
         x_s = x * y_s / y
         x_x = int(x_s)
         crop_size = (x_x, y_s)

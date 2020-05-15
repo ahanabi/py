@@ -34,6 +34,65 @@ class METER(object):
         cv2.imshow('Graying pictures', gray)
         return gray
 
+    # 中值滤波去噪
+    def median_filter(self,img):
+        median = cv2.medianBlur(img, 1)  # 中值滤波
+        cv2.imshow('Median filter', median)
+        return median
+
+    # 双边滤波去噪
+    def bilateral_filter(self,img):
+        bilateral = cv2.bilateralFilter(img, 9, 50, 50)
+        cv2.imshow('Bilateral filter', bilateral)
+        return bilateral
+
+    # 高斯滤波去噪
+    def gaussian_filter(self,img):
+        gaussian = cv2.GaussianBlur(img, (3, 3), 0)
+        cv2.imshow('Gaussian filter', gaussian)
+        return gaussian
+
+    # 图像二值化
+    def binary_image(self,img):
+        # 应用5种不同的阈值方法
+        # ret, th1 = cv2.threshold(img_gray, 127, 255, cv2.THRESH_BINARY)
+        # ret, th2 = cv2.threshold(img_gray, 127, 255, cv2.THRESH_BINARY_INV)
+        # ret, th3 = cv2.threshold(img_gray, 127, 255, cv2.THRESH_TRUNC)
+        # ret, th4 = cv2.threshold(img_gray, 127, 255, cv2.THRESH_TOZERO)
+        # ret, th5 = cv2.threshold(img_gray, 127, 255, cv2.THRESH_TOZERO_INV)
+        # titles = ['Gray', 'BINARY', 'BINARY_INV', 'TRUNC', 'TOZERO', 'TOZERO_INV']
+        # images = [img_gray, th1, th2, th3, th4, th5]
+        # 使用Matplotlib显示
+        # for i in range(6):
+        #     plt.subplot(2, 3, i + 1)
+        #     plt.imshow(images[i], 'gray')
+        #     plt.title(titles[i], fontsize=8)
+        #     plt.xticks([]), plt.yticks([])  # 隐藏坐标轴
+        # plt.show()
+
+        # Otsu阈值
+        _, th = cv2.threshold(img, 0, 255, cv2.THRESH_TOZERO + cv2.THRESH_OTSU)
+        cv2.imshow('Binary image', th)
+        return th
+
+    # 边缘检测
+    def candy_image(self,img):
+        edges = cv2.Canny(img, 60, 143, apertureSize=3)
+        cv2.imshow('canny', edges)
+        return edges
+
+    # 开运算：先腐蚀后膨胀
+    def open_operation(self,img):
+        # 定义结构元素
+        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))  # 矩形结构
+        # kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))   # 椭圆结构
+        # kernel = cv2.getStructuringElement(cv2.MORPH_CROSS, (5, 5))     # 十字形结构
+        opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)  # 开运算
+        cv2.imshow('Open operation', opening)
+        return opening
+
+
+
     def detect_circles(self, gray, img):
         height, width = img.shape[:2]
         circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, 1, 100, param1=100, param2=50,
@@ -112,9 +171,9 @@ class METER(object):
         cv2.imshow('canny', edges)
         rho = 1
         theta = np.pi / 180
-        minLineLength = 100
-        max_line_gap = 5
-        threshold = 98
+        minLineLength = 80
+        max_line_gap = 10
+        threshold = 80
         lines = cv2.HoughLinesP(edges, rho, theta, threshold, minLineLength=minLineLength,maxLineGap=max_line_gap)
         #lines = cv2.HoughLines(edges, 1, np.pi / 180, 80)
 
@@ -186,7 +245,13 @@ class METER(object):
         image = METER(self.path)
         nor = image.normalized_picture()
         gray = image.color_conversion(nor)
-        cir = image.detect_circles(gray, nor)
+        binary = image.binary_image(gray)
+        median = image.median_filter(binary)
+        bilateral = image.bilateral_filter(binary)
+        gaussian = image.gaussian_filter(bilateral)
+        candy = image.candy_image(median)
+        open = image.open_operation(median)
+        cir = image.detect_circles(gaussian,nor)
         pointer = image.detect_pointer(cir, gray)
         print('刻度为: 24.132')
         t2 = time()
