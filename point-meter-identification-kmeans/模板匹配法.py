@@ -187,10 +187,11 @@ def get_pointer_rad(img):
 if __name__ == '__main__':
     #for x in range(1,32):
         #获取测试图像
-        t1 = time()
-        img_s = cv2.imread('test/1.jpg')
+
+        img_s = cv2.imread('0.jpg')
         img=cv2.cvtColor(img_s, cv2.COLOR_BGR2GRAY)
-        template = cv2.imread('template.png')
+        t1 = time()
+        template = cv2.imread('template2.png')
         template=cv2.cvtColor(template,cv2.COLOR_BGR2GRAY)
         #匹配并返回矩形坐标
         top_left,bottom_right=get_match_rect(template,img,method)
@@ -202,16 +203,17 @@ if __name__ == '__main__':
         #cv2.waitKey(0)
         #cv2.destroyAllWindows()
         new = img_s[top_left[1]:bottom_right[1] + 1, top_left[0]:bottom_right[0] + 1]
-        template = cv2.imread('template1.png')
+        template = cv2.imread('template3.png')
         top_left, bottom_right = get_match_rect(template, new, method=method)
         new_ = new[top_left[1]:bottom_right[1] + 1, top_left[0]:bottom_right[0] + 1]
         # 二值化图像
+        t2 = time()
+        t = t2 - t1
+        print('模板匹配时间为:', t)
         cv2.imshow('jietu',new_)
         nor = normalized_picture(new_)
         img=v2_by_k_means(nor)
         rad=get_pointer_rad(img)
         print('刻度 =', get_rad_val(rad[1]))
-        t2 = time()
-        t = t2 - t1
-        print('程序运行时间为:', t)
+
         cv2.waitKey(0)

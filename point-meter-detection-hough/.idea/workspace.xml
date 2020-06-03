@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aabdf1d9-7ca9-4065-849c-936d36195919" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../point-meter-identification-kmeans/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hough-kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/hough-kmeans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/31.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-meter-reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/my-meter-reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-identification-kmeans/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-identification-kmeans/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-identification-kmeans/模板匹配法.py" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-identification-kmeans/模板匹配法.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +39,8 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.my-meter-reader">
-    <configuration name="Convert_image_to_circle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.hough-kmeans">
+    <configuration name="批量灰度化" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Pointer-meter-identification-and-reading-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -47,7 +52,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Convert_image_to_circle.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/批量灰度化.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pointer-meter-identification-and-reading-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -90,48 +116,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MeterReader.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="图片批量处理" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Pointer-meter-identification-and-reading-master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/图片批量处理.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="批量灰度化" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Pointer-meter-identification-and-reading-master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/批量灰度化.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hough-kmeans" />
         <item itemvalue="Python.my-meter-reader" />
+        <item itemvalue="Python.1" />
         <item itemvalue="Python.Identify_picture" />
         <item itemvalue="Python.MeterReader" />
-        <item itemvalue="Python.hough-kmeans" />
-        <item itemvalue="Python.Convert_image_to_circle" />
       </list>
     </recent_temporary>
   </component>
@@ -239,38 +223,38 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1514" height="248" key="GridCell.Tab.0.bottom" timestamp="1589438905954">
+    <state width="1514" height="248" key="GridCell.Tab.0.bottom" timestamp="1590648378053">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1514" height="248" key="GridCell.Tab.0.bottom/0.0.1536.826@0.0.1536.826" timestamp="1589438905954" />
-    <state width="1514" height="248" key="GridCell.Tab.0.center" timestamp="1589438905954">
+    <state width="1514" height="248" key="GridCell.Tab.0.bottom/0.0.1536.826@0.0.1536.826" timestamp="1590648378053" />
+    <state width="1514" height="248" key="GridCell.Tab.0.center" timestamp="1590648378053">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1514" height="248" key="GridCell.Tab.0.center/0.0.1536.826@0.0.1536.826" timestamp="1589438905954" />
-    <state width="1514" height="248" key="GridCell.Tab.0.left" timestamp="1589438905954">
+    <state width="1514" height="248" key="GridCell.Tab.0.center/0.0.1536.826@0.0.1536.826" timestamp="1590648378053" />
+    <state width="1514" height="248" key="GridCell.Tab.0.left" timestamp="1590648378053">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1514" height="248" key="GridCell.Tab.0.left/0.0.1536.826@0.0.1536.826" timestamp="1589438905954" />
-    <state width="1514" height="248" key="GridCell.Tab.0.right" timestamp="1589438905954">
+    <state width="1514" height="248" key="GridCell.Tab.0.left/0.0.1536.826@0.0.1536.826" timestamp="1590648378053" />
+    <state width="1514" height="248" key="GridCell.Tab.0.right" timestamp="1590648378053">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1514" height="248" key="GridCell.Tab.0.right/0.0.1536.826@0.0.1536.826" timestamp="1589438905954" />
-    <state width="1514" height="255" key="GridCell.Tab.1.bottom" timestamp="1589215108291">
+    <state width="1514" height="248" key="GridCell.Tab.0.right/0.0.1536.826@0.0.1536.826" timestamp="1590648378053" />
+    <state width="1514" height="255" key="GridCell.Tab.1.bottom" timestamp="1589726656220">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1514" height="255" key="GridCell.Tab.1.bottom/0.0.1536.826@0.0.1536.826" timestamp="1589215108291" />
-    <state width="1514" height="255" key="GridCell.Tab.1.center" timestamp="1589215108290">
+    <state width="1514" height="255" key="GridCell.Tab.1.bottom/0.0.1536.826@0.0.1536.826" timestamp="1589726656220" />
+    <state width="1514" height="255" key="GridCell.Tab.1.center" timestamp="1589726656220">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1514" height="255" key="GridCell.Tab.1.center/0.0.1536.826@0.0.1536.826" timestamp="1589215108290" />
-    <state width="1514" height="255" key="GridCell.Tab.1.left" timestamp="1589215108290">
+    <state width="1514" height="255" key="GridCell.Tab.1.center/0.0.1536.826@0.0.1536.826" timestamp="1589726656220" />
+    <state width="1514" height="255" key="GridCell.Tab.1.left" timestamp="1589726656219">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1514" height="255" key="GridCell.Tab.1.left/0.0.1536.826@0.0.1536.826" timestamp="1589215108290" />
-    <state width="1514" height="255" key="GridCell.Tab.1.right" timestamp="1589215108290">
+    <state width="1514" height="255" key="GridCell.Tab.1.left/0.0.1536.826@0.0.1536.826" timestamp="1589726656219" />
+    <state width="1514" height="255" key="GridCell.Tab.1.right" timestamp="1589726656220">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1514" height="255" key="GridCell.Tab.1.right/0.0.1536.826@0.0.1536.826" timestamp="1589215108290" />
+    <state width="1514" height="255" key="GridCell.Tab.1.right/0.0.1536.826@0.0.1536.826" timestamp="1589726656220" />
     <state x="272" y="44" key="SettingsEditor" timestamp="1584863214619">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
