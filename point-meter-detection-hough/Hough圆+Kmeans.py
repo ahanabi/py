@@ -138,6 +138,7 @@ class METER(object):
         # cv2.destroyAllWindows()
         return img
 
+
     def get_pointer_rad(self, img):
         '''获取角度'''
         shape = img.shape
@@ -162,6 +163,7 @@ class METER(object):
         print('最大重合数量和对应角度:', max(freq_list, key=lambda x: x[0]))
         #cv2.destroyAllWindows()
         return max(freq_list, key=lambda x: x[0])
+
 
     def iden_pic(self):
         t1 = time()

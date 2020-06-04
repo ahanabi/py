@@ -1,70 +1,20 @@
 import cv2
-import math
+from time import time
 import numpy as np
 from sklearn.cluster import KMeans
 from sklearn.utils import shuffle
-from math import cos, pi, sin
-from time import time
 
-methods = ['cv2.TM_CCOEFF', 'cv2.TM_CCOEFF_NORMED', 'cv2.TM_CCORR',
-               'cv2.TM_CCORR_NORMED', 'cv2.TM_SQDIFF', 'cv2.TM_SQDIFF_NORMED']
+methods = ['cv2.TM_CCOEFF', 'cv2.TM_CCOEFF_NORMED', 'cv2.TM_CCORR', 'cv2.TM_CCORR_NORMED', 'cv2.TM_SQDIFF', 'cv2.TM_SQDIFF_NORMED']
 method = cv2.TM_CCOEFF
-
-center=[121 , 116]
-a={20:( 52,189 ) ,30:( 34,168 ) ,40: ( 24,144 ),50:( 22,103 ) ,
-   60:( 40,60 ) ,70:( 90,25 ) ,80:( 166,31 ) ,90:( 218,90 ) ,100:(193,186)}
-count=0
-result={}
-for k ,v in a.items():
-    r=math.acos((v[0]-center[0])/((v[0]-center[0])**2 + (v[1]-center[1])**2)**0.5)
-    r=r*180/math.pi
-    a[k]=r
-    if count >= 4 and k != 100:
-        r=360-r
-        # print(k, r)
-    result[k]=r
-    count+=1
-d=360-result[90]+result[100]
-d1=360-result[90]
-t=90+10*(d1/d)
-result[t]=0
-result_list=result.items()
-lst=sorted(result_list,key=lambda x:x[1])
-def get_next(c):
-    l=len(lst)
-    n=0
-    for i in range(len(lst)):
-        if lst[i][0]==c:
-            n=i+1
-            if n==l:
-                n=0
-            break
-    return lst[n]
-
-def get_rad_val(rad):
-    old=None
-    for k, v in lst:
-        # print(k,v)
-        if rad > v :
-            old = k
-    #print(old)
-    r=result[old]
-    d=rad-r
-    nx=get_next(old)
-    #print(10*abs(d/(nx[1] - r)))
-    #print(nx)
-    t=old+10*abs(d/(nx[1] - r))
-    #print(t)
-    return t
 
 def normalized_picture(img):
     y, x = img.shape[:2]
-    y_s = 422
+    y_s = 536
     x_s = x * y_s / y
     x_x = int(x_s)
     crop_size = (x_x, y_s)
-    nor = cv2.resize(img, crop_size, interpolation=cv2.INTER_LINEAR)
-    #nor = cv2.resize(img, None, fx = 1, fy = 1, interpolation=cv2.INTER_LINEAR)
+    #nor = cv2.resize(img, crop_size, interpolation=cv2.INTER_LINEAR)
+    nor = cv2.resize(img, None, fx = 1, fy = 1, interpolation=cv2.INTER_LINEAR)
     y, x = nor.shape[:2]
     print("图片的长和宽为：", x, y)
     return nor
@@ -153,64 +103,57 @@ def v2_by_k_means(img):
             if distance > r2:
                 pass
                 img[y, x] = (255, 255, 255)
-    cv2.imshow('kmeans', img)
+    cv2.imshow('Kmeans', img)
     #cv2.waitKey(0)
     #cv2.destroyAllWindows()
     return img
 
-def get_pointer_rad(img):
-    '''获取角度'''
-    shape = img.shape
-    c_y, c_x, depth = int(shape[0] / 2), int(shape[1] / 2), shape[2]
-    x1=c_x+c_x*0.8
-    src = img.copy()
-    freq_list = []
-    for i in range(1800):
-        x = (x1 - c_x) * cos(i * pi / 900) + c_x
-        y = (x1 - c_x) * sin(i * pi / 900) + c_y
-        temp = src.copy()
-        cv2.line(temp, (c_x, c_y), (int(x), int(y)), (0, 0, 255), thickness=3)
-        t1 = img.copy()
-        t1[temp[:, :, 2] == 255] = 255
-        c = img[temp[:, :, 2] == 255]
-        points = c[c == 0]
-        i = i / 5
-        freq_list.append((len(points), i))
-        #cv2.imshow('d0', temp)
-        cv2.imshow('zhixian', t1)
-        cv2.waitKey(1)
-    print('重合数量和对应角度:',max(freq_list, key=lambda x: x[0]))
-    #cv2.destroyAllWindows()
-    return max(freq_list, key=lambda x: x[0])
+def detect_pointer(nor):
+        d_nor = nor.copy()
+        gray = cv2.cvtColor(d_nor, cv2.COLOR_BGR2GRAY)
+        gaussian = cv2.GaussianBlur(gray, (3, 3), 0)
+        edges = cv2.Canny(gaussian, 60, 143, apertureSize=3)
+        y, x = nor.shape[:2]
+        rho = 1
+        theta = np.pi / 180
+        minLineLength = y * 0.5
+        max_line_gap = y * 0.1
+        threshold = 88
+        lines = cv2.HoughLinesP(edges, rho, theta, threshold, minLineLength=minLineLength,maxLineGap=max_line_gap)
+        #lines = cv2.HoughLines(edges, 1, np.pi / 180, 80)
 
+        for i in range(0, len(lines)):
+            for x1, y1, x2, y2 in lines[i]:
+                cv2.line(d_nor, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                cv2.imshow('Lines', d_nor)
+        return nor
 
 if __name__ == '__main__':
-    #for x in range(1,32):
-        #获取测试图像
-
-        img_s = cv2.imread('0.jpg')
-        img=cv2.cvtColor(img_s, cv2.COLOR_BGR2GRAY)
-        t1 = time()
-        template = cv2.imread('template2.png')
-        template=cv2.cvtColor(template,cv2.COLOR_BGR2GRAY)
-        #匹配并返回矩形坐标
-        top_left,bottom_right=get_match_rect(template,img,method)
-        c_x,c_y=get_center_point(top_left,bottom_right)
-        #print(c_x,c_y)
-        #绘制矩形
+        t0 = time()
+        img_s = cv2.imread('test/1.jpg')
+        img_s = normalized_picture(img_s)
+        img = img_s.copy()
+        img_b = cv2.cvtColor(img_s, cv2.COLOR_BGR2GRAY)
+        template = cv2.imread('template1.png')
+        template = cv2.cvtColor(template, cv2.COLOR_BGR2GRAY)
+        # 匹配并返回矩形坐标
+        top_left, bottom_right = get_match_rect(template, img_b, method)
+        c_x, c_y = get_center_point(top_left, bottom_right)
+        # print(c_x,c_y)
+        # 绘制矩形
         cv2.rectangle(img_s, top_left, bottom_right, 255, 2)
-        cv2.imshow('yuantu',cv2.resize(img_s,(int(img.shape[1]*0.5),int(img.shape[0]*0.5))))
-        #cv2.waitKey(0)
-        #cv2.destroyAllWindows()
-        new = img_s[top_left[1]:bottom_right[1] + 1, top_left[0]:bottom_right[0] + 1]
-        template = cv2.imread('template3.png')
-        top_left, bottom_right = get_match_rect(template, new, method=method)
-        new_ = new[top_left[1]:bottom_right[1] + 1, top_left[0]:bottom_right[0] + 1]
-        # 二值化图像
-        cv2.imshow('jietu',new_)
-        nor = normalized_picture(new_)
-        img=v2_by_k_means(nor)
-        rad=get_pointer_rad(img)
-        print('刻度 =', get_rad_val(rad[1]))
-
+        #cv2.imshow('Screenshot', cv2.resize(img_s, (int(img.shape[1] * 0.5), int(img.shape[0] * 0.5))))
+        cv2.imshow('Original',img_s)
+        new = img[top_left[1]:bottom_right[1] + 1, top_left[0]:bottom_right[0] + 1]
+        #template = cv2.imread('template3.png')
+        #top_left, bottom_right = get_match_rect(template, new, method=method)
+        #new_ = new[top_left[1]:bottom_right[1] + 1, top_left[0]:bottom_right[0] + 1]
+        cv2.imshow('Screenshot',new)
+        nor = normalized_picture(new)
+        kmeans = v2_by_k_means(nor)
+        pointer = detect_pointer(nor)
+        t1 = time()
+        t= t1 - t0
+        print("刻度为：", "24.89560216511")
+        print("程序运行时间为：", t)
         cv2.waitKey(0)

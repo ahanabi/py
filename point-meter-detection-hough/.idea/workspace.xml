@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aabdf1d9-7ca9-4065-849c-936d36195919" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../point-meter-identification-kmeans/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/23.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/31.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-meter-reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/my-meter-reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hough-kmeans.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../point-meter-identification-kmeans/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-identification-kmeans/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-identification-kmeans/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-identification-kmeans/template2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-identification-kmeans/template3.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../point-meter-identification-kmeans/模板匹配法.py" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-identification-kmeans/模板匹配法.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
