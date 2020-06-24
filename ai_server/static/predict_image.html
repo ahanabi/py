@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ECharts</title>
+</head>
+
+<body>
+  <input id="btnSubmit" type="button" title="测试" value="测试"></input> 实际值：<span id="txtTrueValue"></span> 估计值：<span id="txtValue"></span>
+  <br />
+  <span>
+    原图：
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:400px; width: 400px; vertical-align: top;"></div>
+  </span>
+  <br />
+  <span>
+    随机变换角度：
+    <img id="random_img" style="height:400px; width: 400px; vertical-align: top;"></img>
+  </span>
+  <span>
+    算法纠正后的图：
+    <img id="perspective_img" style="height:400px; width: 400px; vertical-align: top;"></img>
+  </span>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- ECharts单文件引入 -->
+  <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+  <script type="text/javascript">
+    function rgb() {//rgb颜色随机
+      var r = Math.floor(Math.random() * 256);
+      var g = Math.floor(Math.random() * 256);
+      var b = Math.floor(Math.random() * 256);
+      var rgb = '(' + r + ',' + g + ',' + b + ')';
+      return rgb;
+    }
+    function color16() {//十六进制颜色随机
+      var r = Math.floor(Math.random() * 256);
+      var g = Math.floor(Math.random() * 256);
+      var b = Math.floor(Math.random() * 256);
+      var color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+      return color;
+    }
+    // 路径配置
+    require.config({
+      paths: {
+        echarts: 'http://echarts.baidu.com/build/dist'
+      }
+    });
+
+    // 使用
+    require(
+      [
+        'echarts',
+        'echarts/chart/gauge' // 按需加载
+      ],
+      function (ec) {
+        // 基于准备好的dom，初始化echarts图表
+        let myChart = ec.init(document.getElementById('main'));
+
+        // 为echarts对象加载数据 
+        // myChart.setOption(option);
+        let updateFun = () => {
+          // let startAngle = Math.round(Math.random() * 360)
+          // let endAngle = startAngle - Math.round(Math.random() * 300) - 30
+          let startAngle = 180 + Math.round(Math.random() * 90) - 45
+          let endAngle = 30 + Math.round(Math.random() * 120) - 60
+          // let startAngle = 0
+          // let endAngle = -360
+          let option = {
+            animation: false,
+            // tooltip: {
+            //   formatter: "{a} <br/>{b} : {c}%"
+            // },
+            // toolbox: {
+            //   show: true,
+            //   feature: {
+            //     mark: { show: true },
+            //     restore: { show: true },
+            //     saveAsImage: { show: true }
+            //   }
+            // },
+            series: [
+              {
+                name: '业务指标',
+                type: 'gauge',
+                legendHoverLink: false,
+                splitNumber: Math.round(Math.random() * 10),       // 分割段数，默认为5
+                startAngle: startAngle,
+                endAngle: endAngle,
+                axisLine: {            // 坐标轴线
+                  lineStyle: {       // 属性lineStyle控制线条样式
+                    color: [[0.2, color16()], [0.8, color16()], [1, color16()]],
+                    width: Math.round(Math.random() * 10) + 3
+                  }
+                },
+                axisTick: {            // 坐标轴小标记
+                  splitNumber: Math.round(Math.random() * 10),   // 每份split细分多少段
+                  length: Math.round(Math.random() * 20),        // 属性length控制线长
+                  lineStyle: {       // 属性lineStyle控制线条样式
+                    color: color16()
+                  }
+                },
+                axisLabel: {           // 坐标轴文本标签，详见axis.axisLabel
+                  textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                    color: color16()
+                  }
+                },
+                splitLine: {           // 分隔线
+                  show: true,        // 默认显示，属性show控制显示与否
+                  length: Math.round(Math.random() * 20) + 25,         // 属性length控制线长
+                  lineStyle: {       // 属性lineStyle（详见lineStyle）控制线条样式
+                    color: color16()
+                  }
+                },
+                pointer: {
+                  length: (Math.round(Math.random() * 40) + 60) + '%',
+                  width: Math.round(Math.random() * 8) + 1,
+                  color: color16()
+                },
+                title: {
+                  show: false,
+                  offsetCenter: [0, '-40%'],       // x, y，单位px
+                  textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                    fontWeight: 'bolder'
+                  }
+                },
+                detail: {
+                  show: false,
+                  formatter: '{value}%',
+                  textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+                    color: color16(),
+                    fontWeight: 'bolder'
+                  }
+                },
+                data: [{ value: 50, name: '' }]
+              }
+            ]
+          };
+          option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
+          myChart.setOption(option, true);
+          let img = myChart.getDataURL();
+          // console.log('图片数据：', img);
+          axios.post('/ai_api/gauge/gauge_predict', {
+            img_data: img,
+            read: 0,
+          })
+            .then(function (response) {
+              console.log(response);
+              // alert('识别值：'+response.data.value[0][0]);
+              document.getElementById('random_img').src = 'data:image/jpg;base64,' + response.data.random_img;
+              document.getElementById('perspective_img').src = 'data:image/jpg;base64,' + response.data.perspective_img;
+              document.getElementById('txtValue').innerText = response.data.value[0][0] * 100;
+              document.getElementById('txtTrueValue').innerText = option.series[0].data[0].value;
+            })
+            .catch(function (error) {
+              console.log(error);
+            });
+        }
+        document.getElementById('btnSubmit').addEventListener('click', updateFun);
+      }
+    );
+  </script>
+</body>

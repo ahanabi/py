@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ECharts</title>
+</head>
+
+<body>
+  <input id="selectFile" type="file" />
+  <input id="btnSubmit" type="button" title="测试" value="测试"></input> 估计值：<span id="txtValue"></span>
+  <br />
+  <span>
+    原图：
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <img id="main" style="height:400px; width: 400px; vertical-align: top;"></img>
+  </span>
+  <br />
+  <span>
+    缩放后的测试图：
+    <img id="random_img" style="height:400px; width: 400px; vertical-align: top;"></img>
+  </span>
+  <span>
+    算法纠正后的图：
+    <img id="perspective_img" style="height:400px; width: 400px; vertical-align: top;"></img>
+  </span>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript">
+    function SubmitFun() {
+      document.getElementById('txtValue').innerText = '检测中。。。'
+      var preview = document.querySelector('#main');
+      var file = document.querySelector('#selectFile').files[0];
+      var reader = new FileReader();
+
+      reader.addEventListener("load", function () {
+        preview.src = reader.result;
+        let img = reader.result;
+        // console.log('图片数据：', img);
+        axios.post('/ai_api/gauge/gauge_predict', {
+          img_data: img,
+          read: 1,
+        })
+          .then(function (response) {
+            console.log(response);
+            // alert('识别值：'+response.data.value[0][0]);
+            document.getElementById('random_img').src = 'data:image/jpg;base64,' + response.data.random_img;
+            document.getElementById('perspective_img').src = 'data:image/jpg;base64,' + response.data.perspective_img;
+            document.getElementById('txtValue').innerText = response.data.value[0][0] * 100;
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }, false);
+
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    }
+    document.getElementById('btnSubmit').addEventListener('click', SubmitFun);
+  </script>
+</body>
