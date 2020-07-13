@@ -28,8 +28,8 @@ class METER(object):
         cv2.imshow('Graying pictures', gray)
         height, width = nor.shape[:2]
         circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, 1, 100, param1=100, param2=80,
-                                   minRadius=int(height * 0.25),
-                                   maxRadius=int(height * 0.50))
+                                   minRadius=int(height * 0.05),
+                                   maxRadius=int(height * 0.20))
 
         cir = nor.copy()
         cir_nor = nor.copy()

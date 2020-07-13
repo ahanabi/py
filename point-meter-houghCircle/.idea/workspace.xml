@@ -2,13 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aabdf1d9-7ca9-4065-849c-936d36195919" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Pointer-meter-identification-and-reading-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pointer-meter-identification-and-reading-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hough-kmeans.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point-meter-identification-kmeans/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-identification-kmeans/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point-meter-identification-kmeans/0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point-meter-identification-kmeans/template2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point-meter-identification-kmeans/template3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point-meter-identification-kmeans/模板匹配法.py" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-identification-kmeans/模板匹配法.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/111.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hough圆+Kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hough圆+Kmeans.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-meter-reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/my-meter-reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-templateMatching/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/0/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/0/template0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/template.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-templateMatching/black/template.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/template.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/template.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/模板匹配+Hough直线.py" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-templateMatching/模板匹配+Hough直线.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,28 +81,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.hough-kmeans">
-    <configuration name="批量灰度化" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Pointer-meter-identification-and-reading-master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/批量灰度化.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.my-meter-reader">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Pointer-meter-identification-and-reading-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,6 +103,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Hough圆+Kmeans" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pointer-meter-identification-and-reading-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Hough圆+Kmeans.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Identify_picture" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Pointer-meter-identification-and-reading-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,27 +137,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Identify_picture.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="MeterReader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Pointer-meter-identification-and-reading-master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MeterReader.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.hough-kmeans" />
         <item itemvalue="Python.my-meter-reader" />
+        <item itemvalue="Python.Hough圆+Kmeans" />
+        <item itemvalue="Python.hough-kmeans" />
         <item itemvalue="Python.1" />
         <item itemvalue="Python.Identify_picture" />
-        <item itemvalue="Python.MeterReader" />
       </list>
     </recent_temporary>
   </component>
@@ -222,22 +244,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1514" height="248" key="GridCell.Tab.0.bottom" timestamp="1590648378053">
+    <state width="1514" height="248" key="GridCell.Tab.0.bottom" timestamp="1593659477781">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1514" height="248" key="GridCell.Tab.0.bottom/0.0.1536.826@0.0.1536.826" timestamp="1590648378053" />
-    <state width="1514" height="248" key="GridCell.Tab.0.center" timestamp="1590648378053">
+    <state width="1514" height="248" key="GridCell.Tab.0.bottom/0.0.1536.826@0.0.1536.826" timestamp="1593659477781" />
+    <state width="1514" height="248" key="GridCell.Tab.0.center" timestamp="1593659477781">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1514" height="248" key="GridCell.Tab.0.center/0.0.1536.826@0.0.1536.826" timestamp="1590648378053" />
-    <state width="1514" height="248" key="GridCell.Tab.0.left" timestamp="1590648378053">
+    <state width="1514" height="248" key="GridCell.Tab.0.center/0.0.1536.826@0.0.1536.826" timestamp="1593659477781" />
+    <state width="1514" height="248" key="GridCell.Tab.0.left" timestamp="1593659477780">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1514" height="248" key="GridCell.Tab.0.left/0.0.1536.826@0.0.1536.826" timestamp="1590648378053" />
-    <state width="1514" height="248" key="GridCell.Tab.0.right" timestamp="1590648378053">
+    <state width="1514" height="248" key="GridCell.Tab.0.left/0.0.1536.826@0.0.1536.826" timestamp="1593659477780" />
+    <state width="1514" height="248" key="GridCell.Tab.0.right" timestamp="1593659477781">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state width="1514" height="248" key="GridCell.Tab.0.right/0.0.1536.826@0.0.1536.826" timestamp="1590648378053" />
+    <state width="1514" height="248" key="GridCell.Tab.0.right/0.0.1536.826@0.0.1536.826" timestamp="1593659477781" />
     <state width="1514" height="255" key="GridCell.Tab.1.bottom" timestamp="1589726656220">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
@@ -254,13 +276,9 @@
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state width="1514" height="255" key="GridCell.Tab.1.right/0.0.1536.826@0.0.1536.826" timestamp="1589726656220" />
-    <state x="272" y="44" key="SettingsEditor" timestamp="1584863214619">
+    <state x="272" y="44" key="SettingsEditor" timestamp="1593657235370">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state x="272" y="44" key="SettingsEditor/0.0.1536.826@0.0.1536.826" timestamp="1584863214619" />
-    <state x="431" y="147" width="672" height="678" key="search.everywhere.popup" timestamp="1582733554854">
-      <screen x="0" y="0" width="1536" height="826" />
-    </state>
-    <state x="431" y="147" width="672" height="678" key="search.everywhere.popup/0.0.1536.826@0.0.1536.826" timestamp="1582733554854" />
+    <state x="272" y="44" key="SettingsEditor/0.0.1536.826@0.0.1536.826" timestamp="1593657235370" />
   </component>
 </project>

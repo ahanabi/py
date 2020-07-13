@@ -40,8 +40,8 @@ class METER(object):
     def detect_circles(self, gray, img):
         height, width = img.shape[:2]
         circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, 1, 100, param1=100, param2=50,
-                                   minRadius=int(height * 0.25),
-                                   maxRadius=int(height * 0.50))
+                                   minRadius=int(height * 0.10),
+                                   maxRadius=int(height * 0.25))
 
         cir = img.copy()
         a, b, c = circles.shape

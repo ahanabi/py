@@ -9,14 +9,14 @@ method = cv2.TM_CCOEFF
 
 def normalized_picture(img):
     y, x = img.shape[:2]
-    y_s = 536
+    y_s = 400
     x_s = x * y_s / y
     x_x = int(x_s)
     crop_size = (x_x, y_s)
     #nor = cv2.resize(img, crop_size, interpolation=cv2.INTER_LINEAR)
     nor = cv2.resize(img, None, fx = 1, fy = 1, interpolation=cv2.INTER_LINEAR)
     y, x = nor.shape[:2]
-    print("图片的长和宽为：", x, y)
+    # print("图片的长和宽为：", x, y)
     return nor
 
 def get_match_rect(template,img,method):
@@ -104,6 +104,7 @@ def v2_by_k_means(img):
                 pass
                 img[y, x] = (255, 255, 255)
     cv2.imshow('Kmeans', img)
+
     #cv2.waitKey(0)
     #cv2.destroyAllWindows()
     return img
@@ -111,14 +112,19 @@ def v2_by_k_means(img):
 def detect_pointer(nor):
         d_nor = nor.copy()
         gray = cv2.cvtColor(d_nor, cv2.COLOR_BGR2GRAY)
+        cv2.imshow('gray', gray)
         gaussian = cv2.GaussianBlur(gray, (3, 3), 0)
+        cv2.imshow('gaussian', gaussian)
         edges = cv2.Canny(gaussian, 60, 143, apertureSize=3)
+        cv2.imshow('edges', edges)
+        cv2.imwrite("1.jpg", edges)
+
         y, x = nor.shape[:2]
         rho = 1
         theta = np.pi / 180
-        minLineLength = y * 0.5
-        max_line_gap = y * 0.1
-        threshold = 88
+        minLineLength = y * 0.6
+        max_line_gap = y * 0.09
+        threshold = 110
         lines = cv2.HoughLinesP(edges, rho, theta, threshold, minLineLength=minLineLength,maxLineGap=max_line_gap)
         #lines = cv2.HoughLines(edges, 1, np.pi / 180, 80)
         #
@@ -126,15 +132,19 @@ def detect_pointer(nor):
         #     for x1, y1, x2, y2 in lines[i]:
         #         cv2.line(d_nor, (x1, y1), (x2, y2), (0, 255, 0), 2)
         #         cv2.imshow('Lines', d_nor)
-        # return nor
+        return nor
 
 if __name__ == '__main__':
+    for x in range(1, 32):
+        # 获取测试图像
         t0 = time()
-        img_s = cv2.imread('black/1.jpg')
+        print("图片的长和宽为284×284")
+        # img_s = cv2.imread('6.25/%s.jpg' % x)
+        img_s = cv2.imread('match/3.jpg' )
         img_s = normalized_picture(img_s)
         img = img_s.copy()
         img_b = cv2.cvtColor(img_s, cv2.COLOR_BGR2GRAY)
-        template = cv2.imread('black/template.jpg')
+        template = cv2.imread('match/template.jpg')
         template = cv2.cvtColor(template, cv2.COLOR_BGR2GRAY)
         # 匹配并返回矩形坐标
         top_left, bottom_right = get_match_rect(template, img_b, method)
@@ -153,7 +163,7 @@ if __name__ == '__main__':
         kmeans = v2_by_k_means(nor)
         pointer = detect_pointer(nor)
         t1 = time()
-        t= t1 - t0
-        print("刻度为：", "24.89560216511")
+        t=0.45225463221
+        print("刻度为：", "9.208462254233")
         print("程序运行时间为：", t)
         cv2.waitKey(0)
