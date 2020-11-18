@@ -2,56 +2,120 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aabdf1d9-7ca9-4065-849c-936d36195919" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Pointer-meter-identification-and-reading-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pointer-meter-identification-and-reading-master.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/00.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/111.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/24.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/27.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/32.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/33.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/34.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/35.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/36.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hough圆+Kmeans.py" beforeDir="false" afterPath="$PROJECT_DIR$/Hough圆+Kmeans.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-meter-reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/my-meter-reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-templateMatching/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/0/0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/0/template0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/template.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-templateMatching/black/template.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/template.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/template.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/模板匹配+Hough直线.py" beforeDir="false" afterPath="$PROJECT_DIR$/../point-meter-templateMatching/模板匹配+Hough直线.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/.idea/kmeans指针识别.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/black/template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/match/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/match/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/match/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/match/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/match/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/match/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/match/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/match/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/match/template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/one/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/one/template0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/silvery/template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/test/template0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/模板匹配+Hough直线.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/模板匹配法(原版).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../point-meter-templateMatching/模板匹配法.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +146,27 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.my-meter-reader">
+    <configuration name="圆裁剪" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pointer-meter-identification-and-reading-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/圆裁剪.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Pointer-meter-identification-and-reading-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,27 +222,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Identify_picture.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="圆裁剪" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Pointer-meter-identification-and-reading-master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/圆裁剪.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
